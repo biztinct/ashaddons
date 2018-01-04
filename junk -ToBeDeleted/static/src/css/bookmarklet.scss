@@ -1,0 +1,34 @@
+#odooIframe {
+  position: fixed;
+  width: 400px;
+  height: 430px;
+  z-index: 9999;
+  border: solid 1px #000000;
+
+  &.top {
+    top: 0
+  }
+
+  &.down {
+    bottom: 0;
+  }
+
+  &.left {
+    left: 0;
+    float: left;
+  }
+
+  &.right {
+    right: 0;
+    float: right;
+  }
+
+  & iframe {
+    visibility: visible!important;
+    height: 100%;
+  }
+}
+
+.bookmarklet-active {
+  border: 1px solid #ffff00;
+}
